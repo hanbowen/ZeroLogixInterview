@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300);
+
+
+$red: #E6443B;
+$green: #52CA52;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  position: absolute;
+  top: 0; left: 0;
+  bottom: 0; right: 0;
+  background-color: #FFFFFF;
+  margin: 0;
+  font-family: 'Source sans pro', 'Helvetica', sans-serif;
+}
+
+
+svg {
+  width: 1100px;
+  position: absolute;
+  z-index: 0;
+  fill: transparent;
+
+  .up {
+    stroke: $green;
+  }
+  .down {
+    stroke: $red;
+  }
+}
+
+canvas {
+  width: 1000px;
+  height: 500px;
+  border-bottom: 1px solid #000000;
+  position: absolute;
+  z-index: 100;
+  left: 100px;
+  cursor: move;
+	cursor: grab;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+}
+
+#footer {
+	position: absolute;
+	bottom: 20;
+	right: 0;
+	padding: 10px;
+	font-sizing: 18px;
+}
